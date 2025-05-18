@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <title>Payment</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mx-5">
+            <div class="card p-0">
+                <div class="card-header">
+                    <h3 class="bg-light fw-semibold">Payment form example</h2>
+                </div>
+                <div class="card-body">
+                    <div class="alert alert-danger fw-semibold" role="alert">
+                        Some fields are missing
+                    </div>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-5 ps-0 fw-semibold">
+                                <fieldset>
+                                    <label for="card">Card #</label>
+                                    <input type="text" name="card" class="form-control my-2" placeholder="xxxxxxxxxxxxx"
+                                        aria-label="Username">
+                                </fieldset>
+                            </div>
+                            <div class="col-3 fw-semibold">
+                                <fieldset>
+                                    <label for="cvc">CVC #</label>
+                                    <input type="password" name="cvc" class="form-control my-2" placeholder="0000"
+                                        aria-label="Username">
+                                </fieldset>
+                            </div>
+                            <div class="col-4 pe-0 fw-semibold">
+                                <fieldset>
+                                    <label for="amount">Amount </label>
+                                    <div class="d-flex">
+                                        <i class="fa-solid fa-dollar-sign align-content-center"></i>
+                                        <input type="text" name="amount" class="form-control my-2" placeholder="Amount"
+                                            aria-label="Username">
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row d-flex">
+                        <div class="col-6 fw-semibold ">
+                            <fieldset>
+                                <label for="name">First name</label>
+                                <input type="text" name="name" class="form-control my-2" placeholder=""
+                                    aria-label="Username">
+                                <label for="city">City</label>
+                                <input type="text" name="city" class="form-control my-2" placeholder=""
+                                    aria-label="Username">
+                                <label for="payment-options">We accept:</label>
+                                <div class="payment-options fs-5 bg-secondary rounded-3 mt-4 d-flex col-8 p-2 text-white justify-content-between">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1"><i
+                                                class="fa-brands fa-cc-mastercard"></i></label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            id="inlineRadio2" value="option2">
+                                        <label class="form-check-label" for="inlineRadio2"><i
+                                                class="fa-brands fa-cc-visa"></i></label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1"><i
+                                                class="fa-brands fa-cc-diners-club"></i></label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1"><i class="fa-brands fa-cc-amex"></i>
+                                                </label>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="col-6 fw-semibold">
+                            <fieldset>
+                                <label for="last-name">Last name</label>
+                                <input type="text" name="name" class="form-control my-2" placeholder="" aria-label="Username">
+                            </fieldset>
+                            <div class="address d-flex flex-row col-12 justify-content-between">
+                                <div class="fw-semibold col-6 pe-2">
+                                    <fieldset class="">
+                                        <label for="inputGroupSelect04">State</label>
+                                        <select class="form-select my-2" id="inputGroupSelect04" aria-label="Example select with button addon">
+                                            <option selected="">Pick a state</option>
+                                            <option value="1">San José</option>
+                                            <option value="2">Alajuela</option>
+                                            <option value="3">Heredia</option>
+                                            <option value="4">Cartago</option>
+                                            <option value="5">Limón</option>
+                                            <option value="6">Puntarenas</option>
+                                            <option value="7">Guanacaste</option>
+                                        </select>
+                                    </fieldset>
+                                </div>
+                                <div class="fw-semibold col-6 ps-2">
+                                    <fieldset classs="d-flex ps-2">
+                                        <label for="p-code ">Postal code</label>
+                                        <input type="text" name="p-code" class="form-control my-2" placeholder="" aria-label="Username">
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="form-floating fw-semibold">
+                                <fieldset>
+                                    <label for="floatingTextarea2 ">Comments</label>
+                                    <textarea class="form-control my-2" placeholder="" id="floatingTextarea2"
+                                        style="height: 100px"></textarea>
+                                    <p class="text-secondary fw-semibold fs-6">Add any notes here.</p>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer text-body-secondary d-flex justify-content-end">
+                    <button type="button" class="btn btn-secondary me-1">Cancel</button>
+                    <button type="button" class="btn btn-primary ms-1">Send</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <script src="https://kit.fontawesome.com/a28047fbb9.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
